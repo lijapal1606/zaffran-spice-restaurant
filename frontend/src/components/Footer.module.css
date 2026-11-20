@@ -1,0 +1,96 @@
+.footer {
+  background-color: #18181B;
+  color: #D4D4D8;
+  border-top: 1px solid #27272A;
+  margin-top: auto;
+  padding: 3rem 1.5rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #27272A;
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footerTitle {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #FEF08A;
+}
+
+.footerDesc {
+  color: #A1A1AA;
+  line-height: 1.6;
+  max-width: 320px;
+}
+
+.heading {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #A1A1AA;
+}
+
+.list strong {
+  color: #F4F4F5;
+}
+
+.bottomBar {
+  max-width: 1400px;
+  margin: 1.5rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #71717A;
+  font-size: 0.8125rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.techPills {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.techPill {
+  background-color: #27272A;
+  color: #E4E4E7;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
